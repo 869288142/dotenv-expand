@@ -5,6 +5,7 @@ interface DotenvResult {
     parsed?: {
         [name: string]: string;
     };
+    ignoreProcessEnv: boolean
 }
 
 declare function dotenv_expand(config: DotenvResult): DotenvResult;
